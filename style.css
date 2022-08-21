@@ -1,0 +1,10 @@
+
+.header{
+    display: flex;
+}
+.paragraph{
+    padding: 10% 20% 10% 0%;
+}
+.head{
+    font-family: 'Berkshire Swash', cursive;
+}
