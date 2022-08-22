@@ -1,4 +1,6 @@
-
+.body{
+    background-color: rgba(177, 165, 165, 0.541);
+}
 .header{
     display: flex;
 }
@@ -8,6 +10,10 @@
 .head{
     font-family: 'Berkshire Swash', cursive;
 }
+.card{
+    border: 1px solid rgb(247, 231, 188);
+    border-radius: 0;
+}
 .full-card{
     padding-left: 1%;
 
@@ -15,4 +21,8 @@
 
 .second-section{
     padding-top: 1%;
+}
+
+.bar{
+    margin-left: 12%;
 }
