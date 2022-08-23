@@ -3,7 +3,11 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerField = document.getElementById('perplayer-rate');
     const playerRateString = perPlayerField.value;
     const playerRate = parseFloat(playerRateString);
-    const playerRateTotal = playerRate * 5;
+    if (cartArray.length > 5) {
+        cartArray.length = 5;
+        return;
+    }
+    const playerRateTotal = playerRate * cartArray.length;
     console.log(playerRateTotal);
     const expensesTotalElement = document.getElementById('player-expenses');
     expensesTotalElement.innerText = playerRateTotal;
@@ -19,12 +23,12 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
 
 
 
-    const managerField = document.getElementById('manager=rate');
+    const managerField = document.getElementById('manager-rate');
     const managerRateString = managerField.value;
     const managerRate = parseFloat(managerRateString);
     
 
-    const coachField = document.getElementById('manager=rate');
+    const coachField = document.getElementById('coach-rate');
     const coachRateString = coachField.value;
     const coachRate = parseFloat(coachRateString);
 

@@ -40,7 +40,7 @@
                           <h5 class="card-title">Neymar Jr</h5>
                           <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                          <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
+                          <button id="Btn" class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -53,7 +53,7 @@
                       <h5 class="card-title">Toni Kroos</h5>
                       <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
                     </div>
                   </div>
              </div>
@@ -65,7 +65,7 @@
                       <h5 class="card-title">Lionel Messi</h5>
                       <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
                     </div>
                   </div>
 
@@ -111,7 +111,7 @@
                           <h5 class="card-title">Renato Sanches</h5>
                           <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -124,7 +124,7 @@
                       <h5 class="card-title">Sergio Ramos</h5>
                       <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
                     </div>
                   </div>
              </div>
@@ -136,7 +136,7 @@
                       <h5 class="card-title">Vítor Machado</h5>
                       <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
                     </div>
                   </div>
 
@@ -157,11 +157,11 @@
                       <button id="btn-calculate" class="btn btn-primary px-5 mx-5 mb-2">Calculate</button> 
                       <div class="d-flex mt-2 mb-2">
                         <h6 class="text-light fw-normal ms-2">Player Expenses</h6>
-                        <h6 class="text-light ms-5 ">$<span id="player-expenses">5000</span></h6>
+                        <h6 class="text-light ms-5 ">$<span id="player-expenses">00</span></h6>
                       </div>
                       <div class="d-flex">
                         <h6 id="manager-expenses" class="text-light fw-normal ms-2 me-2">Manager</h6>
-                        <input class="w-50 ms-4 ps-1 mb-3 border border-white bg-dark text-light" type="text" name="" id="manager=rate" placeholder="1000">
+                        <input class="w-50 ms-4 ps-1 mb-3 border border-white bg-dark text-light" type="text" name="" id="manager-rate" placeholder="1000">
                       </div>
                       <div class="d-flex">
                         <h6 id="coach-expenses" class="text-light fw-normal ms-2 me-1">Coach</h6>
@@ -170,7 +170,7 @@
                       <button id="btn-calculate-total" class="btn btn-primary mx-5 px-3">Calculate Total</button>
                       <div class="d-flex mt-2 mb-2">
                         <h6 class="text-light fw-normal ms-2">Total</h6>
-                        <h6 class=" ms-5 ps-5 text-warning">$<span id="total-expenses">11000</span></h6>
+                        <h6 class=" ms-5 ps-5 text-warning">$<span id="total-expenses">00</span></h6>
                       </div>
                     </div>
                   </div>
