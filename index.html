@@ -40,7 +40,7 @@
                           <h5 class="card-title">Neymar Jr</h5>
                           <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                          <button class="btn btn-primary px-5 mx-5" onclick="addToCart()">SELECT</button>
+                          <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -53,7 +53,7 @@
                       <h5 class="card-title">Toni Kroos</h5>
                       <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart()">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
                     </div>
                   </div>
              </div>
@@ -65,59 +65,40 @@
                       <h5 class="card-title">Lionel Messi</h5>
                       <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart()">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
                     </div>
                   </div>
 
               </div>
     
-              <div>
-                <p class="text-4xl text-center">Selected-<span id="total-products" class="text-blue-500">0</span>
-                </p>
-                <div class="overflow-x-auto">
-                    <table class="table table-zebra w-full">
-                      <!-- head -->
-                      <thead>
-                        <tr>
-                          <th></th>
-                          <th>Product Name</th>
-                          <th>Price</th>
-                        </tr>
-                      </thead>
-                      <tbody id="products-cart">
-                        <!-- <tr>
-                            <th>1</th>
-                            <td>Cy Ganderton</td>
-                            <td>Quality Control Specialist</td>
-                          </tr> -->
-                      </tbody>
-                    </table>
-                  </div>
-            </div>
-             <!-- <div class="full-card">
+            
+             <div class="full-card">
                 <div class="card" style="width: 17rem;">
                     
-                    <div id="" class="card-body bg-light">
-                      <h5 class="card-title fw-bold pt-3 fs-4 text-warning text-center">Selected - V</h5>
+                    <div id="" class="card-body bg-dark">
+                      <h5 class="head card-title fw-bold pt-2 fs-4 text-warning text-center">Selected-<span id="total-added-player" class="">0</span></h5>
                       <hr class="text-light">
-                      <div>
-                        <table class="">
-                          
-                          <tbody>
-                            <ul>
-                               
-                                 <td class="item-title">Cy Ganderton
+                      
+                       <div class="">
+                    <table class="table table-borderless w-full text-light">
+                      
+                      <tbody id="cart-product">
+                        <tr>
+                             <!-- <th>1</th>
+                            <td>Cy Ganderton</td>  -->
+                            
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>  
 
-                                </td>  
-                                
-                              </ul> 
-                          </tbody>
-                        </table>
-                        
-                      </div>
+                 
+
+
+
                     </div>
                   </div>
-             </div> -->
+             </div> 
         </div>
 
         <section class="second-section">
@@ -130,7 +111,7 @@
                           <h5 class="card-title">Renato Sanches</h5>
                           <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart()">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -143,7 +124,7 @@
                       <h5 class="card-title">Sergio Ramos</h5>
                       <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart()">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
                     </div>
                   </div>
              </div>
@@ -155,17 +136,19 @@
                       <h5 class="card-title">Vítor Machado</h5>
                       <p class="card-text text-white-50">36 Goals .
                             120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart()">SELECT</button>
+                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this)">SELECT</button>
                     </div>
                   </div>
 
               </div>
     
+
+              <!-- budget calculation part -->
              <div class="full-card">
                 <div class="card bg-dark" style="width: 17rem;">
                     
                     <div class="card-body">
-                      <h5 class="card-title fw-bold pt-3 fs-4 text-warning text-center pb-2">Budget</h5>
+                      <h5 class="head card-title fw-bold pt-3 fs-4 text-warning text-center pb-2">Budget</h5>
                       <hr class="text-light">
                       <div class="d-flex pt-2">
                         <h6 class="text-light fw-normal ms-2">Per Player</h6>
