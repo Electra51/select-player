@@ -23,15 +23,20 @@
             <img src="images/player.png" alt="">
         </div>
         <div class="paragraph text-center">
-            <h1 class="head text-warning">Select Your favorite Player</h1>
-            <p class="text-white-50">Here you can easily select your favorite football player. Also hire them giving respectful amount Which they want. Here you select their budget before hiring</p>
+            <h1 class="head text-warning">Select Your max-5 favourite Players</h1>
+            <p class="text-white-50">Here you can easily select your favourite football player. Also hire them giving respectful amount Which they want. Here you select their budget before hiring</p>
         </div>
     </header>
     <!-- header section end -->
 
     <!-- main section started -->
     <main class="container pt-5 mt-2">
-        <div class="d-flex">
+
+      
+     <div class="d-flex">
+      <div>
+        <section class="first-section">
+          <div class="d-flex ">
             <!-- card1 -->
                 <div>
                     <div class="card" style="width: 17rem;">
@@ -45,7 +50,7 @@
                       </div>
                 </div>
             
-<!-- card2 -->
+    <!-- card2 -->
              <div class="full-card">
                 <div class="card" style="width: 17rem;">
                     <img src="images/Toni Kroos.png" class="card-img-top" alt="...">
@@ -68,115 +73,126 @@
                             <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
                     </div>
                   </div>
-
+    
               </div>
     
             
-             <div class="full-card">
-                <div class="card" style="width: 17rem;">
-                    
-                    <div id="" class="card-body bg-dark">
-                      <h5 class="head card-title fw-bold pt-2 fs-4 text-warning text-center">Selected-<span id="total-added-player" class="">0</span></h5>
-                      <hr class="text-light">
-                      
-                       <div class="">
-                    <table class="table table-borderless w-full text-light">
-                      
-                      <tbody id="cart-product">
-                        <tr>
-                             <!-- <th>1</th>
-                            <td>Cy Ganderton</td>  -->
-                            
-                          </tr>
-                      </tbody>
-                    </table>
-                  </div>  
-
-                 
-
-
-
-                    </div>
-                  </div>
-             </div> 
+              
         </div>
-
-        <section class="second-section">
-            <div class="d-flex">
-              <!-- card4 -->
-                <div>
+         </section>
+      
+            <section class="second-section">
+                <div class="d-flex">
+                  <!-- card4 -->
+                    <div>
+                        <div class="card" style="width: 17rem;">
+                            <img src="images/Renato Sanches.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center bg-dark text-light">
+                              <h5 class="card-title">Renato Sanches</h5>
+                              <p class="card-text text-white-50">36 Goals .
+                                120 Assist</p>
+                                <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
+                            </div>
+                          </div>
+                    </div>
+                
+      <!-- card5 -->
+                 <div class="full-card">
                     <div class="card" style="width: 17rem;">
-                        <img src="images/Renato Sanches.png" class="card-img-top" alt="...">
+                        <img src="images/Sergio Ramos.png" class="card-img-top" alt="...">
                         <div class="card-body text-center bg-dark text-light">
-                          <h5 class="card-title">Renato Sanches</h5>
+                          <h5 class="card-title">Sergio Ramos</h5>
                           <p class="card-text text-white-50">36 Goals .
-                            120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
+                                120 Assist</p>
+                                <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
                         </div>
                       </div>
+                 </div>
+        <!-- card6 -->
+                  <div class="full-card">
+                    <div class="card" style="width: 17rem;">
+                        <img src="images/Vítor Machado.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center bg-dark text-light">
+                          <h5 class="card-title">Vítor Machado</h5>
+                          <p class="card-text text-white-50">36 Goals .
+                                120 Assist</p>
+                                <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
+                        </div>
+                      </div>
+      
+                  </div>
+                </section>
+       </div>
+      
+               <!-- selective part -->
+              <div> 
+                <section class="ps-4">
+                <div>
+                  <div class="full-card">
+                    <div class="card" style="width: 17rem;">
+                        
+                        <div id="" class="card-body bg-dark">
+                          <h5 class="head card-title fw-bold pt-2 fs-4 text-warning text-center">Selected-<span id="total-added-player" class="">0</span></h5>
+                          <hr class="text-light">
+                          
+                           <div class="">
+                        <table class="table table-borderless w-full text-light">
+                          
+                          <tbody id="cart-product">
+                            <tr>
+                                 <!-- <th>1</th>
+                                <td>Cy Ganderton</td>  -->
+                                
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>  
+      
+                     
+      
+      
+      
+                        </div>
+                      </div>
+                 </div>
+                    <!-- budget calculation part -->
+                   <div class="full-card mt-3">
+                      <div class="card bg-dark" style="width: 17rem;">
+                          
+                          <div class="card-body">
+                            <h5 class="head card-title fw-bold pt-3 fs-4 text-warning text-center pb-2">Budget</h5>
+                            <hr class="text-light">
+                            <div class="d-flex pt-2">
+                              <h6 class="text-light fw-normal ms-2">Per Player</h6>
+                              <input class="w-50 ms-4 mb-3 border border-white bg-dark text-light" type="text" name="" id="perplayer-rate" placeholder="1000">
+                            </div>
+                            <button id="btn-calculate" class="btn btn-primary px-5 mx-5 mb-2">Calculate</button> 
+                            <div class="d-flex mt-2 mb-2">
+                              <h6 class="text-light fw-normal ms-2">Player Expenses</h6>
+                              <h6 class="text-light ms-5 ">$<span id="player-expenses">00</span></h6>
+                            </div>
+                            <div class="d-flex">
+                              <h6 id="manager-expenses" class="text-light fw-normal ms-2 me-2">Manager</h6>
+                              <input class="w-50 ms-4 ps-1 mb-3 border border-white bg-dark text-light" type="text" name="" id="manager-rate" placeholder="1000">
+                            </div>
+                            <div class="d-flex">
+                              <h6 id="coach-expenses" class="text-light fw-normal ms-2 me-1">Coach</h6>
+                              <input class="w-50 ms-5 mb-3 border border-white bg-dark text-light" type="text" name="" id="coach-rate" placeholder="1000">
+                            </div>
+                            <button id="btn-calculate-total" class="btn btn-primary mx-5 px-3">Calculate Total</button>
+                            <div class="d-flex mt-2 mb-2">
+                              <h6 class="text-light fw-normal ms-2">Total</h6>
+                              <h6 class=" ms-5 ps-5 text-warning">$<span id="total-expenses">00</span></h6>
+                            </div>
+                          </div>
+                        </div>
+                   </div>
+                 </div>
                 </div>
-            
-<!-- card5 -->
-             <div class="full-card">
-                <div class="card" style="width: 17rem;">
-                    <img src="images/Sergio Ramos.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center bg-dark text-light">
-                      <h5 class="card-title">Sergio Ramos</h5>
-                      <p class="card-text text-white-50">36 Goals .
-                            120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
-                    </div>
-                  </div>
-             </div>
-    <!-- card6 -->
-              <div class="full-card">
-                <div class="card" style="width: 17rem;">
-                    <img src="images/Vítor Machado.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center bg-dark text-light">
-                      <h5 class="card-title">Vítor Machado</h5>
-                      <p class="card-text text-white-50">36 Goals .
-                            120 Assist</p>
-                            <button class="btn btn-primary px-5 mx-5" onclick="addToCart(this);disable(this)">SELECT</button>
-                    </div>
-                  </div>
-
+               </section>
               </div>
-    
-
-              <!-- budget calculation part -->
-             <div class="full-card">
-                <div class="card bg-dark" style="width: 17rem;">
-                    
-                    <div class="card-body">
-                      <h5 class="head card-title fw-bold pt-3 fs-4 text-warning text-center pb-2">Budget</h5>
-                      <hr class="text-light">
-                      <div class="d-flex pt-2">
-                        <h6 class="text-light fw-normal ms-2">Per Player</h6>
-                        <input class="w-50 ms-4 mb-3 border border-white bg-dark text-light" type="text" name="" id="perplayer-rate" placeholder="1000">
-                      </div>
-                      <button id="btn-calculate" class="btn btn-primary px-5 mx-5 mb-2">Calculate</button> 
-                      <div class="d-flex mt-2 mb-2">
-                        <h6 class="text-light fw-normal ms-2">Player Expenses</h6>
-                        <h6 class="text-light ms-5 ">$<span id="player-expenses">00</span></h6>
-                      </div>
-                      <div class="d-flex">
-                        <h6 id="manager-expenses" class="text-light fw-normal ms-2 me-2">Manager</h6>
-                        <input class="w-50 ms-4 ps-1 mb-3 border border-white bg-dark text-light" type="text" name="" id="manager-rate" placeholder="1000">
-                      </div>
-                      <div class="d-flex">
-                        <h6 id="coach-expenses" class="text-light fw-normal ms-2 me-1">Coach</h6>
-                        <input class="w-50 ms-5 mb-3 border border-white bg-dark text-light" type="text" name="" id="coach-rate" placeholder="1000">
-                      </div>
-                      <button id="btn-calculate-total" class="btn btn-primary mx-5 px-3">Calculate Total</button>
-                      <div class="d-flex mt-2 mb-2">
-                        <h6 class="text-light fw-normal ms-2">Total</h6>
-                        <h6 class=" ms-5 ps-5 text-warning">$<span id="total-expenses">00</span></h6>
-                      </div>
-                    </div>
-                  </div>
-             </div>
-            </div>
-        </section>
+          
+     </div>
     </main>
     <!-- main end -->
 
